@@ -7,7 +7,7 @@ const ForgetInput = () => {
   const [email, setEmail] = useState('')
 
   return (
-    <View>
+    <View style={{width:'100%'}}>
       <Text>Enter your email</Text>
       <CustomInput value={email} setValue={setEmail} placeholder='email...' image={icons.email} />
     </View>

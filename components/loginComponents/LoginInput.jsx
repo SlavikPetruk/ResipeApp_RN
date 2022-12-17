@@ -8,7 +8,7 @@ const LoginInput = () => {
   const [password, setPassword] = useState('')
 
   return (
-    <View>
+    <View style={{width:'100%'}}>
       <CustomInput
         value={username}
         setValue={setUsername}

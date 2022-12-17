@@ -1,7 +1,7 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { COLORS, FONTS, images, SIZES } from '../../constants'
 
-const Header = () => {
+const Header = ({navigation}) => {
     return (
       <View
         style={{
@@ -27,7 +27,9 @@ const Header = () => {
             Сьогодні щось готуємо?
           </Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity
+        onPress={() => navigation.replace('Profile')}
+        >
           <Image
             source={images.profile}
             style={{
